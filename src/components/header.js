@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <ul className="navbar-menu">
           <li>
-          <Link to={`/movie`}>
+          <Link to={`/`}>
             Movies
           </Link></li>
         </ul>

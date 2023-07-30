@@ -10,15 +10,6 @@ build/
 .env.test.local
 .env.production.local
 
-# Compiled output
-*.log
-*.pnp.js
-*.pnp.cjs
-*.js
-*.jsx
-*.css
-*.scss
-
 # IDE and editor files
 .vscode/
 .idea/
@@ -37,7 +28,3 @@ package-lock.json
 yarn.lock
 npm-shrinkwrap.json
 
-# Ignore node.js cache directories
-.npm/
-.pnp/
-.pnp.js

@@ -1,0 +1,287 @@
+$primary-color: #131722;
+$border-radius: 8px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$secondary-color: #4ca1a3;
+$accent-color: #f1c40f;
+$text-color: #333;
+$link-color: #333;
+$link-hover-color: $accent-color;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://xcentium.com/-/media/images/homepage/vercelhero2.jpg?rev=0735e4e6babe40adab62b6c5550fba55');
+  background-color: #000;
+  background-size: cover;
+
+
+  .header {
+    background-color: #fff;
+    color: $text-color;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-brand {
+        font-size: 1.5rem;
+      }
+
+      .logo {
+        color: $link-color;
+        text-decoration: none;
+
+        img {
+          width: 180px;
+        }
+      }
+
+
+      &-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          margin-left: 20px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          a {
+            color: $link-color;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .movielist.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .movie-card {
+      width: 250px;
+      border-radius: $border-radius;
+      margin-bottom: 20px;
+
+      .img-section {
+        height: 370px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $box-shadow;
+        display: flex;
+
+        img {
+          height: 370px;
+          width: 100%;
+          box-shadow: $box-shadow;
+          border-radius: 4px;
+        }
+      }
+      .movie-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 0px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        line-height: 18px;
+        color: white;
+        margin-top: 2px;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+
+      .description-block {
+        .movie-rating {
+          color: #949cb0;
+        }
+      }
+
+      .movie-description {
+        font-size: 14px;
+        color: #666;
+        margin-top: 8px;
+      }
+
+      .movie-release-year {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #949cb0;
+        margin-top: 2px;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+
+      .movie-rating {
+        display: inline-block;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .moviedetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .movie-container {
+      width: 80%;
+      height: auto;
+      border: 5px solid rgba(255, 255, 255, 0.4);
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+      backdrop-filter: blur(50px);
+      box-shadow: 0 50px 55px -10px #000;
+    }
+
+    img {
+      float: right;
+    }
+
+    .title {
+      color: #fff;
+      padding: 50px 10px 0px 80px;
+      font-size: 32px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+    }
+
+    h3 {
+      padding: 0px 10px 0px 80px;
+
+      span {
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 13px;
+        color: #fff;
+      }
+    }
+
+    .dis {
+      color: #fff;
+      padding: 0px 10px 20px 80px;
+      font-size: 18px;
+    }
+
+    .movie-metadata {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 12px;
+      padding: 0px 10px 10px 77px;
+
+      span {
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .release-year {
+      background-color: #d4d469;
+      color: black;
+    }
+
+    .movie-plot {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .dis p {
+      margin-bottom: 0px;
+    }
+
+    button {
+      margin: 0px 10px 20px 80px;
+      padding: 20px 70px;
+      font-size: 30px;
+      border-radius: 0px;
+      border: 2px solid #fff;
+      background: none;
+      background-size: 100% 100%;
+      color: #f1f1f1;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    button:hover {
+      color: #000;
+      background: #fff;
+    }
+
+    .col-70 {
+      width: 70%;
+      float: left;
+
+    }
+
+    .col-30 {
+      width: 30%;
+      float: left;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      vertical-align: baseline;
+      max-height: 100vh;
+      min-height: 80vh;
+    }
+  }
+
+  .movie-rating {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .moviedetails {
+      .col-m-100 {
+        width: 100%;
+        max-height: 100vh;
+        min-height: auto;
+      }
+    }
+  }
+}

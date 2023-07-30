@@ -17,13 +17,14 @@ To Install Dependency:
 
 ```bash
 npm install
-```
 
 ```
+
 Run the development server:
 
 ```bash
 npm run serve
+
 ```
 To create Build:
 

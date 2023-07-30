@@ -29,6 +29,6 @@ npm run serve
 To create Build:
 
 ```bash
-npx webpack && npm run serve
+npx webpack
 
 ```

@@ -13,7 +13,6 @@
 git clone https://github.com/MeghaLikhar/movie-app.git
 
 ```
-
 To Install Dependency:
 
 ```bash
@@ -21,7 +20,6 @@ npm install
 ```
 
 ```
-
 Run the development server:
 
 ```bash
